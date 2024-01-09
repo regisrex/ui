@@ -7,8 +7,18 @@ const font = Questrial({ subsets: ["latin"], weight: ["400"] });
 export const metadata: Metadata = {
   title: "Designs by Regis NDIZIHIWE",
   description: "Curated list of design projects by Regis NDIZIHIWE",
-  keywords : ["Regis NDIZIHIWE, design, ui, ux, web, graphic, product, designer, developer, kigali, rwanda, africa", "ui designer", "ux designer","regisndizihiwe.me" , "designs.regisndizihiwe.me"],
-  icons: ["/favicon.png"],
+  keywords: [
+    "Regis NDIZIHIWE, design, ui, ux, web, graphic, product, designer, developer, kigali, rwanda, africa",
+    "ui designer",
+    "ux designer",
+    "regisndizihiwe.me",
+    "designs.regisndizihiwe.me",
+  ],
+  icons: [
+    {
+      url: "/favicon.png",
+    },
+  ],
   openGraph: {
     type: "website",
     url: "https://designs.regisndizihiwe.me",
@@ -20,6 +30,9 @@ export const metadata: Metadata = {
         url: "/og-image.png",
       },
     ],
+    countryName: "Rwanda",
+    emails : ["ndizihiweregis06@gmail.com", "hey@regisndizihiwe.me"],
+    phoneNumbers: ["+250788927469"]
   },
 };
 
@@ -30,6 +43,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body className={font.className}>{children}</body>
     </html>
   );
