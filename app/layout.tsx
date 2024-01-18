@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Questrial } from "next/font/google";
 import "./globals.css";
-
-const font = Questrial({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Designs by Regis NDIZIHIWE",
@@ -31,8 +28,8 @@ export const metadata: Metadata = {
       },
     ],
     countryName: "Rwanda",
-    emails : ["ndizihiweregis06@gmail.com", "hey@regisndizihiwe.me"],
-    phoneNumbers: ["+250788927469"]
+    emails: ["ndizihiweregis06@gmail.com", "hey@regisndizihiwe.me"],
+    phoneNumbers: ["+250788927469"],
   },
 };
 
@@ -46,7 +43,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className={font.className}>{children}</body>
+      <body className="bg-blue-50/60">{children}</body>
     </html>
   );
 }

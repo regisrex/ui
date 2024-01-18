@@ -1,8 +1,22 @@
-@import url('https://fonts.cdnfonts.com/css/longsile');
+/* @import url('https://fonts.cdnfonts.com/css/longsile'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .shadow-btn {
   box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+@font-face {
+  font-family: Intervar;
+  src: url('../assets/inter-var.woff2');
+}
+
+
+* {
+  font-family: Intervar, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
