@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+
+
 export const metadata: Metadata = {
   title: "Designs by Regis NDIZIHIWE",
   description: "Curated list of design projects by Regis NDIZIHIWE",
@@ -43,7 +45,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className="bg-blue-50/60">{children}</body>
+      <body className="bg-blue-50/60" 
+      >{children}</body>
     </html>
   );
 }
